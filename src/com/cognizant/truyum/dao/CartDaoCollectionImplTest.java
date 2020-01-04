@@ -12,7 +12,6 @@ public class CartDaoCollectionImplTest {
         testgetAllCArtItems();
         testRemoveCartItem();
         testgetAllCArtItems();
-
     }
 
     public static void testAddCartItem() {
@@ -24,14 +23,14 @@ public class CartDaoCollectionImplTest {
     public static void testgetAllCArtItems() {
         try {
             System.out.println("Retrieving all the items from cart");
-            List<MenuItem> list = cartDao.getAllCartItems(1).getMenuItemList();
+            List<MenuItem> list = cartDao.getAllCartItems(2).getMenuItemList();
             for (MenuItem menuItem : list) {
                 System.out.println(menuItem);
             }
 
             System.out.println("Total Price:" + cartDao.getAllCartItems(1).getTotal());
         } catch (CartEmptyException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
         }
     }
 
