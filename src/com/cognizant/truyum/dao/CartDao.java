@@ -1,4 +1,4 @@
-package com.cognizant.tryum.dao;
+package com.cognizant.truyum.dao;
 
 import com.cognizant.truyum.model.Cart;
 
