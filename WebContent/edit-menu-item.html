@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/script.js"></script>
+<title>edit-menu-item</title>
+<link rel="icon" href="images\truyum-logo-light.png" />
+<link rel="stylesheet" type="text/css" href="styles\style.css" />
+</head>
+<body>
+    <header>
+        &nbsp;&nbsp truYum <img src="images\truyum-logo-light.png">
+    </header>
+    <nav>
+        <a href="menu-item-list-admin.html">Menu</a>
+    </nav>
+    <h1>Edit Menu Item</h1>
+
+    <form name="details" action = "edit-menu-item-status.html" method = "post" autocomplete="off"
+        onsubmit="return valid()">
+        <table>
+            <tr>
+                <td><label for="title"><b>Name</b></label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="title" id="name" placeholder="Sandwich" size="143"/></td>
+            </tr>
+        </table>
+        <table id="table1">
+            <tr>
+                <td><label for="price"><b>Price(Rs.)</b></label></td>
+                <td><label for="inStock"><b>Active</b></label></td>
+                <td></td>
+                <td><label for="dateOfLaunch"><b>Date of Launch</b></label></td>
+                <td></td>
+                <td><label for="category"><b>Category</b></label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="price" id="price" placeholder="97" /></td>
+                <td><input type="radio" name="inStock" value="Yes" checked>Yes 
+				<input type="radio" name="inStock" value="No">No</td>
+                <td></td>
+                <td><input type="text" name="dateOfLaunch" id="launch"
+                    placeholder="27/04/2022" /></td>
+                <td></td>
+                <td><select id="category">
+                        <option value="">Main Course</option>
+                        <option value="Main Course">Main Course</option>
+                        <option value="Starters">Starters</option>
+                        <option value="Main Course">Main Course</option>
+                        <option value="Desserts">Desserts</option>
+                        <option value="Drinks">Drinks</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"  name="freeDelivery" value="FreeDelivery" checked>FreeDelivery</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" id = "button" value="Save" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>Copyright &copy 2019 </footer>
+</body>
+</html>
