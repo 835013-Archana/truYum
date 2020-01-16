@@ -32,7 +32,7 @@ nav a {
 }
 /*For cart empty*/
 #cart-empty {
-    top: 25%;
+    top: 20%;
     font-size: 120%;
     color: #8a8e94;
     left: 5%;
@@ -75,7 +75,7 @@ p {
     font-size: 120%;
     top: 23%;
     position: fixed;
-    left: 13%;
+    left: 18%;
     color: #0eb51c;
     font-weight: bold;
 }
